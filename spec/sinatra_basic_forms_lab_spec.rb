@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require 'pry'
 describe App do
 
@@ -85,3 +86,22 @@ describe App do
   end
 
 end
+=======
+ENV["SINATRA_ENV"] = "test"
+require_relative '../config/environment.rb'
+require 'capybara/dsl'
+require 'rack/test'
+require 'capybara/dsl' 
+
+RSpec.configure do |config|
+  config.include Capybara::DSL
+  config.include Rack::Test::Methods
+  config.order = 'default'
+end
+
+def app
+  Rack::Builder.parse_file('config.ru').first
+end
+
+Capybara.app = 
+>>>>>>> c2b8ee2a09590b38b13d0b9e7d7021c7a6cbc55f

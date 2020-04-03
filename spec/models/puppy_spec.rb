@@ -41,3 +41,7 @@ describe 'Puppy class' do
   end
 
 end
+<<<<<<< HEAD
+=======
+© 2020 GitHub, Inc.
+>>>>>>> c2b8ee2a09590b38b13d0b9e7d7021c7a6cbc55f
